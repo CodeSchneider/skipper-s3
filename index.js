@@ -39,9 +39,9 @@ module.exports = function SkipperS3 (globalOpts) {
         region: globalOpts.region||undefined,
         endpoint: globalOpts.endpoint||undefined,
         token: globalOpts.token||undefined,
-        style: 'path',
-        port: 9000,
-        secure: false
+        style: globalOpts.style||undefined,
+        port: globalOpts.port||undefined,
+        secure: globalOpts.secure||undefined
       });
 
       // Build a noop transform stream that will pump the S3 output through
@@ -106,9 +106,9 @@ module.exports = function SkipperS3 (globalOpts) {
         bucket: globalOpts.bucket,
         region: globalOpts.region||undefined,
         endpoint: globalOpts.endpoint||undefined,
-        style: 'path',
-        port: 9000,
-        secure: false
+        style: globalOpts.style||undefined,
+        port: globalOpts.port||undefined,
+        secure: globalOpts.secure||undefined
       })
         .del(fd)
         .on('response', function (res) {
@@ -131,9 +131,9 @@ module.exports = function SkipperS3 (globalOpts) {
         region: globalOpts.region,
         endpoint: globalOpts.endpoint,
         token: globalOpts.token||undefined,
-        style: 'path',
-        port: 9000,
-        secure: false
+        style: globalOpts.style||undefined,
+        port: globalOpts.port||undefined,
+        secure: globalOpts.secure||undefined
       });
 
       // TODO: take a look at maxKeys
@@ -268,9 +268,9 @@ module.exports = function SkipperS3 (globalOpts) {
           region: globalOpts.region||undefined,
           endpoint: globalOpts.endpoint||undefined,
           token: globalOpts.token||undefined,
-          style: 'path',
-          port: 9000,
-          secure: false
+          style: globalOpts.style||undefined,
+          port: globalOpts.port||undefined,
+          secure: globalOpts.secure||undefined
         })
       }, function (err, body) {
         if (err) {
