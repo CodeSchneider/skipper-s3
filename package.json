@@ -1,6 +1,6 @@
 {
   "name": "@codeschneider/skipper-s3-alt",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Streaming file uploads to S3 with support for extra knox options",
   "main": "index.js",
   "scripts": {
