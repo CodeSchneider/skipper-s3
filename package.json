@@ -1,14 +1,14 @@
 {
-  "name": "skipper-s3",
-  "version": "0.5.11",
-  "description": "Streaming file uploads to S3",
+  "name": "skipper-s3-alt",
+  "version": "0.0.1",
+  "description": "Streaming file uploads to S3 with support for extra knox options",
   "main": "index.js",
   "scripts": {
     "test": "node -e \"require('skipper-adapter-tests')({mocha: { timeout: 360000 }, module: require('./'), bucket:process.env.BUCKET || 'skipper-adapter-tests', key: process.env.KEY, secret: process.env.SECRET});\""
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/balderdashy/skipper-s3.git"
+    "url": "git://github.com/codeschneider/skipper-s3-alt.git"
   },
   "keywords": [
     "s3",
@@ -19,12 +19,12 @@
     "sails",
     "express"
   ],
-  "author": "Mike McNeil",
+  "author": "Trey Schneider",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/balderdashy/skipper-s3/issues"
+    "url": "https://github.com/codeschneider/skipper-s3-alt/issues"
   },
-  "homepage": "https://github.com/balderdashy/skipper-s3",
+  "homepage": "https://github.com/codeschneider/skipper-s3-alt",
   "devDependencies": {
     "skipper-adapter-tests": "~1.5.8",
     "travis-encrypt": "^2.1.1"
